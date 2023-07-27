@@ -2,8 +2,10 @@ from fastapi import FastAPI
 from functions import validate_api_length
 from application import generate_branding_snippet, generate_keywords
 from settings import MAX_USER_INPUT
+from mangum import Mangum
 
 app = FastAPI()
+handler = Mangum(app)
 
 
 @app.get("/generate-snippets")

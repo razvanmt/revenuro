@@ -1,7 +1,4 @@
-from decouple import config
-
-API_KEY = config('API_KEY')
-MODEL4 = config('GPT4')
-MODEL3 = config('GPT3')
+MODEL4 = "gpt-4-0613"
+MODEL3 = "gpt-3.5-turbo-0613"
 GPT4_ENABLED = False
 MAX_USER_INPUT = 16

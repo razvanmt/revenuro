@@ -6,9 +6,6 @@ import settings
 import argparse
 import re
 
-openai.api_key = settings.API_KEY
-
-
 class Conversation:
     messages = None
 
